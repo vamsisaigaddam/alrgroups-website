@@ -1146,5 +1146,426 @@ a {
 </div>
 
 <!-- ================= END WATER / RAIN ANIMATION ================= -->
+<!-- ================= REALISTIC ALR WEATHER EFFECT ================= -->
+
+<style>
+/* Hide the previous weather animation */
+.alr-weather-animation {
+    display: none !important;
+}
+
+/* Main weather layer */
+.alr-real-weather {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 5;
+}
+
+/* ---------------- CLOUDS ---------------- */
+
+.alr-real-cloud {
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: 85px;
+    border-radius: 100px;
+    background:
+        radial-gradient(circle at 25% 70%, rgba(255,255,255,.95) 0 35px, transparent 36px),
+        radial-gradient(circle at 45% 45%, rgba(255,255,255,.98) 0 55px, transparent 56px),
+        radial-gradient(circle at 65% 55%, rgba(245,250,255,.95) 0 48px, transparent 49px),
+        radial-gradient(circle at 82% 72%, rgba(235,243,250,.9) 0 35px, transparent 36px);
+    filter: blur(.3px) drop-shadow(0 8px 12px rgba(50,80,100,.18));
+    opacity: .88;
+    animation: alrCloudMove linear infinite;
+}
+
+.alr-cloud-1 {
+    left: -350px;
+    transform: scale(1.2);
+    animation-duration: 55s;
+}
+
+.alr-cloud-2 {
+    left: -500px;
+    top: 150px;
+    transform: scale(.8);
+    opacity: .65;
+    animation-duration: 75s;
+    animation-delay: -30s;
+}
+
+.alr-cloud-3 {
+    left: -450px;
+    top: 250px;
+    transform: scale(1.45);
+    opacity: .38;
+    animation-duration: 90s;
+    animation-delay: -60s;
+}
+
+@keyframes alrCloudMove {
+    from {
+        transform: translateX(0) scale(1);
+    }
+    to {
+        transform: translateX(calc(100vw + 650px)) scale(1);
+    }
+}
+
+/* ---------------- RAIN ---------------- */
+
+.alr-real-rain {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.alr-real-drop {
+    position: absolute;
+    top: -50px;
+    width: 1.5px;
+    height: 25px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to bottom,
+        rgba(210,240,255,0),
+        rgba(125,205,245,.75),
+        rgba(80,175,230,.9)
+    );
+    transform: rotate(10deg);
+    filter: blur(.15px);
+    animation: alrRainFall linear infinite;
+}
+
+@keyframes alrRainFall {
+    0% {
+        transform: translate3d(0,-60px,0) rotate(10deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .8;
+    }
+
+    90% {
+        opacity: .7;
+    }
+
+    100% {
+        transform: translate3d(-90px,110vh,0) rotate(10deg);
+        opacity: 0;
+    }
+}
+
+/* ---------------- HEAVY RAIN ---------------- */
+
+.alr-heavy-rain {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.alr-heavy-drop {
+    position: absolute;
+    top: -60px;
+    width: 2px;
+    height: 38px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(90,180,235,.9)
+    );
+    transform: rotate(12deg);
+    animation: alrHeavyFall .7s linear forwards;
+}
+
+@keyframes alrHeavyFall {
+    to {
+        transform: translate3d(-130px,110vh,0) rotate(12deg);
+        opacity: 0;
+    }
+}
+
+/* ---------------- MIST ---------------- */
+
+.alr-mist {
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 100px;
+    background: linear-gradient(
+        to top,
+        rgba(190,235,245,.38),
+        rgba(220,245,250,.15),
+        transparent
+    );
+    filter: blur(8px);
+}
+
+/* ---------------- WATER RIPPLE ---------------- */
+
+.alr-ripples {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.alr-ripple {
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    border: 1px solid rgba(80,175,220,.35);
+    border-radius: 50%;
+    animation: alrRipple 1.8s ease-out forwards;
+}
+
+@keyframes alrRipple {
+    0% {
+        transform: scale(.2);
+        opacity: .8;
+    }
+
+    100% {
+        transform: scale(2.8);
+        opacity: 0;
+    }
+}
+
+/* ---------------- LIGHTNING ---------------- */
+
+.alr-lightning {
+    position: absolute;
+    inset: 0;
+    background: rgba(220,245,255,.35);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alr-lightning.flash {
+    animation: alrFlash .35s ease-out;
+}
+
+@keyframes alrFlash {
+    0% { opacity: 0; }
+    20% { opacity: .55; }
+    35% { opacity: 0; }
+    55% { opacity: .25; }
+    100% { opacity: 0; }
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+
+    .alr-real-weather {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .alr-real-cloud {
+        transform: scale(.65);
+    }
+
+    .alr-cloud-1 {
+        top: 30px;
+    }
+
+    .alr-cloud-2 {
+        top: 130px;
+    }
+
+    .alr-cloud-3 {
+        top: 220px;
+    }
+}
+</style>
+
+
+<div class="alr-real-weather">
+
+    <!-- Clouds -->
+    <div class="alr-real-cloud alr-cloud-1"></div>
+    <div class="alr-real-cloud alr-cloud-2"></div>
+    <div class="alr-real-cloud alr-cloud-3"></div>
+
+    <!-- Normal rain -->
+    <div class="alr-real-rain" id="alrRealRain"></div>
+
+    <!-- Heavy rain on click -->
+    <div class="alr-heavy-rain" id="alrHeavyRain"></div>
+
+    <!-- Mist -->
+    <div class="alr-mist"></div>
+
+    <!-- Water ripples -->
+    <div class="alr-ripples" id="alrRipples"></div>
+
+    <!-- Lightning -->
+    <div class="alr-lightning" id="alrLightning"></div>
+
+</div>
+
+
+<script>
+(function () {
+
+    const rain = document.getElementById("alrRealRain");
+    const heavyRain = document.getElementById("alrHeavyRain");
+    const ripples = document.getElementById("alrRipples");
+    const lightning = document.getElementById("alrLightning");
+
+    /* ---------------- NORMAL RAIN ---------------- */
+
+    function createRain() {
+
+        const numberOfDrops =
+            window.innerWidth < 600 ? 90 : 180;
+
+        for (let i = 0; i < numberOfDrops; i++) {
+
+            const drop = document.createElement("span");
+
+            drop.className = "alr-real-drop";
+
+            drop.style.left =
+                Math.random() * 105 + "%";
+
+            drop.style.animationDuration =
+                (0.7 + Math.random() * 1.1) + "s";
+
+            drop.style.animationDelay =
+                (-Math.random() * 2) + "s";
+
+            drop.style.height =
+                (15 + Math.random() * 25) + "px";
+
+            drop.style.opacity =
+                (0.25 + Math.random() * 0.6);
+
+            rain.appendChild(drop);
+        }
+    }
+
+
+    /* ---------------- CLICK = HEAVY RAIN ---------------- */
+
+    function heavyRainBurst() {
+
+        heavyRain.innerHTML = "";
+
+        const drops =
+            window.innerWidth < 600 ? 70 : 130;
+
+        for (let i = 0; i < drops; i++) {
+
+            const drop = document.createElement("span");
+
+            drop.className = "alr-heavy-drop";
+
+            drop.style.left =
+                Math.random() * 105 + "%";
+
+            drop.style.animationDelay =
+                (Math.random() * .45) + "s";
+
+            drop.style.height =
+                (25 + Math.random() * 35) + "px";
+
+            heavyRain.appendChild(drop);
+        }
+
+        heavyRain.style.opacity = "1";
+
+        setTimeout(function () {
+            heavyRain.style.opacity = "0";
+        }, 1200);
+    }
+
+
+    /* ---------------- CLICK = WATER RIPPLE ---------------- */
+
+    function createRipple(x) {
+
+        const ripple = document.createElement("span");
+
+        ripple.className = "alr-ripple";
+
+        ripple.style.left =
+            (x - 15) + "px";
+
+        ripple.style.bottom =
+            (5 + Math.random() * 35) + "px";
+
+        ripples.appendChild(ripple);
+
+        setTimeout(function () {
+            ripple.remove();
+        }, 2000);
+    }
+
+
+    /* ---------------- RANDOM WATER RIPPLES ---------------- */
+
+    setInterval(function () {
+
+        const x =
+            Math.random() * window.innerWidth;
+
+        createRipple(x);
+
+    }, 900);
+
+
+    /* ---------------- USER CLICK ---------------- */
+
+    document.addEventListener("click", function (event) {
+
+        heavyRainBurst();
+
+        createRipple(event.clientX);
+
+    });
+
+
+    /* ---------------- OCCASIONAL LIGHTNING ---------------- */
+
+    function lightningFlash() {
+
+        if (Math.random() < 0.45) {
+
+            lightning.classList.remove("flash");
+
+            void lightning.offsetWidth;
+
+            lightning.classList.add("flash");
+        }
+
+        setTimeout(
+            lightningFlash,
+            12000 + Math.random() * 18000
+        );
+    }
+
+
+    /* Start everything */
+
+    createRain();
+
+    setTimeout(
+        lightningFlash,
+        8000
+    );
+
+})();
+</script>
+
+<!-- ================= END REALISTIC ALR WEATHER EFFECT ================= -->
 </body>
 </html>
