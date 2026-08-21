@@ -6,9 +6,11 @@
 
 <title>ALR Groups | RO, DM & Drinking Water Supply</title>
 
-<meta name="description" content="ALR Groups provides RO water, DM water, 20L drinking water cans and bulk water tanker supply for industries, offices, commercial establishments and local businesses in and around Madharapakkam, Tamil Nadu.">
+<meta name="description" content="ALR Groups provides RO water, DM water, 20L drinking water cans and bulk water tanker supply for industries, offices, commercial establishments and residential requirements.">
 
-<meta name="keywords" content="ALR Groups, ALR RO Water, RO water supplier, DM water supplier, 20L drinking water cans, bulk water tanker, water supply Madharapakkam, industrial water supplier">
+<meta name="keywords" content="ALR Groups, RO water, DM water, drinking water cans, 20L water cans, bulk water supply, water tanker, Madharapakkam, Tamil Nadu">
+
+<meta name="author" content="ALR Groups">
 
 <style>
 
@@ -39,11 +41,6 @@ img {
     display: block;
 }
 
-.container {
-    width: min(1150px, 92%);
-    margin: auto;
-}
-
 /* =========================
    HEADER
 ========================= */
@@ -52,75 +49,66 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.97);
-    border-bottom: 1px solid #e5edf1;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    background: rgba(255,255,255,0.98);
+    border-bottom: 1px solid #e4edf2;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 .navbar {
-    min-height: 86px;
+    max-width: 1350px;
+    margin: auto;
+    min-height: 78px;
+    padding: 10px 30px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
 }
 
-.logo {
-    height: 72px;
-    width: auto;
-    object-fit: contain;
+.logo img {
+    width: 150px;
+    height: auto;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
     gap: 30px;
-    font-weight: 600;
+    font-weight: 700;
+    color: #123b63;
 }
 
 .nav-links a {
-    color: #163c53;
     transition: 0.25s;
 }
 
 .nav-links a:hover {
-    color: #078bb7;
+    color: #078b65;
 }
 
-.nav-buttons {
+.nav-actions {
     display: flex;
-    gap: 10px;
-}
-
-.btn {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 13px 22px;
-    border-radius: 10px;
+    gap: 12px;
+}
+
+.call-btn,
+.whatsapp-btn {
+    padding: 12px 20px;
+    border-radius: 7px;
     font-weight: 700;
-    border: 2px solid #078bb7;
-    transition: 0.25s;
-    cursor: pointer;
+    white-space: nowrap;
 }
 
-.btn-primary {
-    background: #078bb7;
+.call-btn {
     color: white;
+    background: #075ca8;
 }
 
-.btn-primary:hover {
-    background: #056f93;
-    border-color: #056f93;
-}
-
-.btn-outline {
-    background: white;
-    color: #078bb7;
-}
-
-.btn-outline:hover {
-    background: #eefaff;
+.whatsapp-btn {
+    color: white;
+    background: #159447;
 }
 
 /* =========================
@@ -128,112 +116,121 @@ header {
 ========================= */
 
 .hero {
-    padding: 85px 0;
-    background:
-        linear-gradient(135deg, #f5fcff 0%, #ffffff 55%, #eefcff 100%);
+    background: linear-gradient(90deg, #f7fcff 0%, #ffffff 43%, #edf8fc 100%);
 }
 
-.hero-grid {
+.hero-container {
+    max-width: 1350px;
+    margin: auto;
+
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
-    gap: 55px;
+    grid-template-columns: 42% 58%;
+    min-height: 390px;
 }
 
-.badge {
+.hero-content {
+    padding: 55px 25px 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-tag {
     display: inline-block;
-    padding: 9px 18px;
-    background: #dff7fd;
-    color: #0785b0;
+    width: fit-content;
+
+    padding: 7px 15px;
+    margin-bottom: 15px;
+
     border-radius: 30px;
+    background: #e6f6fc;
+    color: #0875b5;
+
     font-size: 14px;
     font-weight: 800;
-    margin-bottom: 22px;
+    letter-spacing: 0.3px;
 }
 
 .hero h1 {
-    font-size: clamp(42px, 6vw, 70px);
+    font-size: clamp(42px, 5vw, 64px);
     line-height: 1.05;
-    margin-bottom: 24px;
-    color: #123b55;
+    color: #123b63;
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
-    color: #078bb7;
+    color: #078d6a;
 }
 
 .hero-text {
-    font-size: 19px;
-    color: #557080;
-    max-width: 650px;
-    margin-bottom: 30px;
+    font-size: 17px;
+    max-width: 550px;
+    color: #415f72;
+    margin-bottom: 25px;
 }
 
 .hero-buttons {
     display: flex;
+    gap: 12px;
     flex-wrap: wrap;
-    gap: 13px;
 }
 
-.hero-card {
-    min-height: 390px;
-    border-radius: 30px;
-    background: linear-gradient(145deg, #078bb7, #11b79e);
-    display: flex;
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
-    box-shadow: 0 25px 60px rgba(0,130,160,0.20);
+
+    padding: 13px 22px;
+    border-radius: 7px;
+
+    font-weight: 800;
 }
 
-.hero-card-inner {
+.primary-btn {
+    background: #075ca8;
+    color: #fff;
+}
+
+.secondary-btn {
+    border: 2px solid #078d6a;
+    color: #078d6a;
+    background: #fff;
+}
+
+.hero-image {
+    min-height: 390px;
+    overflow: hidden;
+}
+
+.hero-image img {
     width: 100%;
-    border: 1px solid rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.16);
-    border-radius: 22px;
-    padding: 40px;
-    color: white;
-    backdrop-filter: blur(8px);
-}
-
-.hero-card-inner .big-icon {
-    font-size: 70px;
-    margin-bottom: 15px;
-}
-
-.hero-card h2 {
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.hero-card p {
-    font-size: 17px;
-    opacity: 0.95;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* =========================
-   SECTIONS
+   SECTION
 ========================= */
 
-section {
-    padding: 85px 0;
+.section {
+    padding: 42px 25px;
 }
 
-.section-header {
+.section-title {
     text-align: center;
-    max-width: 750px;
-    margin: 0 auto 50px;
+    color: #123b63;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.section-header h2 {
-    font-size: 40px;
-    color: #123b55;
-    margin-bottom: 12px;
-}
-
-.section-header p {
-    color: #607583;
-    font-size: 17px;
+.section-title::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #078d6a;
+    margin: 8px auto 0;
 }
 
 /* =========================
@@ -241,111 +238,136 @@ section {
 ========================= */
 
 .services {
-    background: #ffffff;
-}
+    max-width: 1350px;
+    margin: auto;
 
-.service-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+    gap: 24px;
 }
 
 .service-card {
-    padding: 30px 24px;
-    background: white;
-    border: 1px solid #e3edf1;
-    border-radius: 20px;
+    border: 1px solid #dfe9ee;
+    border-radius: 14px;
+    padding: 25px 20px;
+
     text-align: center;
-    box-shadow: 0 10px 30px rgba(20,70,90,0.07);
+    background: #fff;
+
+    box-shadow: 0 4px 16px rgba(17,60,90,0.05);
+
     transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .service-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 18px 40px rgba(20,70,90,0.13);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(17,60,90,0.12);
 }
 
-.service-icon {
-    width: 78px;
-    height: 78px;
-    margin: 0 auto 20px;
-    border-radius: 20px;
+.service-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e9f9fd;
-    font-size: 40px;
+
+    background: #eef8fc;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
 }
 
 .service-card h3 {
-    font-size: 21px;
-    color: #123b55;
-    margin-bottom: 12px;
+    color: #123b63;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .service-card p {
-    color: #647783;
+    color: #526a79;
     font-size: 15px;
 }
 
 /* =========================
-   TANKER
+   FLEET
 ========================= */
 
-.tanker-section {
-    background: #f3fbfd;
+.fleet-section {
+    background: #eef8fc;
 }
 
-.tanker-box {
+.fleet {
+    max-width: 1350px;
+    margin: auto;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
+    grid-template-columns: 28% 72%;
+    gap: 25px;
     align-items: center;
 }
 
-.tanker-image {
-    min-height: 380px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #087e98, #0aaf8e);
-    display: flex;
+.fleet-info h2 {
+    color: #123b63;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.fleet-info p {
+    color: #526a79;
+    margin-bottom: 15px;
+}
+
+.fleet-list {
+    list-style: none;
+}
+
+.fleet-list li {
+    margin: 8px 0;
+    font-weight: 700;
+    color: #31566b;
+}
+
+.fleet-list li::before {
+    content: "✓";
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
-    box-shadow: 0 20px 50px rgba(0,100,130,0.18);
+
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+
+    border-radius: 50%;
+    background: #159447;
+    color: #fff;
+    font-size: 13px;
 }
 
-.tanker-symbol {
-    font-size: 130px;
+.fleet-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
 }
 
-.tanker-content h2 {
-    font-size: 40px;
-    color: #123b55;
-    margin-bottom: 20px;
+.fleet-image {
+    height: 190px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
 }
 
-.tanker-content p {
-    color: #607583;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-.tanker-list {
-    list-style: none;
-    margin: 25px 0;
-}
-
-.tanker-list li {
-    padding: 8px 0;
-    color: #31586c;
-    font-weight: 600;
-}
-
-.tanker-list li::before {
-    content: "✓";
-    color: #08a486;
-    font-weight: bold;
-    margin-right: 10px;
+.fleet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* =========================
@@ -353,182 +375,94 @@ section {
 ========================= */
 
 .industries {
-    background: #ffffff;
-}
+    max-width: 1350px;
+    margin: auto;
 
-.industry-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
 }
 
-.industry-card {
-    padding: 27px;
-    border-radius: 18px;
-    background: #f7fbfc;
-    border: 1px solid #e1edf1;
+.industry {
+    padding: 22px 10px;
+
+    text-align: center;
+
+    border: 1px solid #dce8ee;
+    border-radius: 10px;
+
+    background: #fff;
 }
 
-.industry-card h3 {
-    color: #123b55;
+.industry-icon {
+    font-size: 32px;
     margin-bottom: 8px;
 }
 
-.industry-card p {
-    color: #657a86;
+.industry h4 {
+    color: #123b63;
+    font-size: 14px;
 }
 
 /* =========================
    ABOUT
 ========================= */
 
+.about-section {
+    background: #f8fbfd;
+}
+
 .about {
-    background: #f5fbfd;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
-}
-
-.about h2 {
-    font-size: 40px;
-    color: #123b55;
-    margin-bottom: 20px;
-}
-
-.about p {
-    color: #607583;
-    margin-bottom: 18px;
-    font-size: 17px;
-}
-
-.about-points {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 25px;
-}
-
-.about-point {
-    padding: 18px;
-    background: white;
-    border-radius: 15px;
-    border: 1px solid #e1edf1;
-}
-
-.about-point strong {
-    display: block;
-    color: #078bb7;
-    margin-bottom: 5px;
-}
-
-.about-visual {
-    border-radius: 28px;
-    padding: 45px;
-    background: linear-gradient(145deg, #08384d, #087e98);
-    color: white;
+    max-width: 1000px;
+    margin: auto;
     text-align: center;
 }
 
-.about-visual .water-icon {
-    font-size: 90px;
+.about h2 {
+    color: #123b63;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
-.about-visual h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+.about p {
+    color: #526a79;
+    font-size: 17px;
 }
 
 /* =========================
    COMPLIANCE
 ========================= */
 
-.compliance {
-    background: white;
+.compliance-section {
+    padding-top: 30px;
 }
 
-.compliance-grid {
+.compliance {
+    max-width: 1100px;
+    margin: auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    max-width: 900px;
-    margin: auto;
+    gap: 18px;
 }
 
 .compliance-card {
+    padding: 22px;
+    border: 1px solid #dce8ee;
+    border-radius: 12px;
     text-align: center;
-    padding: 30px 20px;
-    border: 1px solid #dfebef;
-    border-radius: 18px;
-    background: #fbfeff;
+    background: #fff;
 }
 
 .compliance-card h3 {
-    color: #0785b0;
-    margin-bottom: 10px;
+    color: #123b63;
+    margin-bottom: 8px;
 }
 
-.compliance-card p {
-    font-weight: 700;
-    color: #294e60;
+.compliance-number {
+    font-weight: 800;
+    color: #078d6a;
     word-break: break-word;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-    background: #f3fbfd;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.contact-card {
-    background: white;
-    padding: 35px;
-    border-radius: 22px;
-    border: 1px solid #dfebef;
-    box-shadow: 0 10px 30px rgba(20,70,90,0.06);
-}
-
-.contact-card h3 {
-    color: #123b55;
-    font-size: 27px;
-    margin-bottom: 20px;
-}
-
-.contact-item {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-    margin: 18px 0;
-}
-
-.contact-item .icon {
-    font-size: 22px;
-}
-
-.contact-item strong {
-    display: block;
-    color: #123b55;
-}
-
-.contact-item span,
-.contact-item a {
-    color: #607583;
-}
-
-.contact-item a:hover {
-    color: #078bb7;
 }
 
 /* =========================
@@ -536,26 +470,42 @@ section {
 ========================= */
 
 .cta {
-    padding: 70px 0;
-    background: linear-gradient(135deg, #078bb7, #10af9c);
+    background: linear-gradient(100deg, #075ca8, #078d6a);
     color: white;
-    text-align: center;
+    padding: 35px 25px;
+}
+
+.cta-inner {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
 }
 
 .cta h2 {
-    font-size: 42px;
-    margin-bottom: 12px;
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 
 .cta p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    opacity: 0.95;
 }
 
-.cta .btn {
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cta-buttons a {
     background: white;
-    color: #0785b0;
-    border-color: white;
+    color: #075ca8;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight: 800;
 }
 
 /* =========================
@@ -563,58 +513,52 @@ section {
 ========================= */
 
 footer {
-    background: #082f43;
-    color: white;
-    padding: 55px 0 25px;
+    background: #082f45;
+    color: #fff;
+    padding: 45px 25px 20px;
 }
 
 .footer-grid {
+    max-width: 1200px;
+    margin: auto;
+
     display: grid;
     grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
     gap: 35px;
 }
 
 .footer-logo {
-    height: 85px;
-    background: white;
-    padding: 8px;
-    border-radius: 12px;
-    margin-bottom: 18px;
+    width: 150px;
+    margin-bottom: 15px;
 }
 
 footer h3 {
-    margin-bottom: 18px;
-    font-size: 19px;
+    margin-bottom: 12px;
 }
 
 footer p,
-footer li,
-footer a {
-    color: #c5d8e0;
+footer li {
+    color: #d6e5ec;
+    font-size: 14px;
 }
 
-footer a:hover {
-    color: white;
-}
-
-.footer-links {
+footer ul {
     list-style: none;
 }
 
-.footer-links li {
-    margin: 9px 0;
-}
-
-.footer-compliance p {
-    margin: 12px 0;
+footer li {
+    margin-bottom: 7px;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.15);
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 30px auto 0;
     padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+
     text-align: center;
-    color: #aac4cf;
+    color: #bcd1dc;
+    font-size: 14px;
 }
 
 /* =========================
@@ -623,123 +567,134 @@ footer a:hover {
 
 .whatsapp-float {
     position: fixed;
-    right: 22px;
-    bottom: 22px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: #20c86b;
-    color: white;
+    right: 24px;
+    bottom: 24px;
+
+    width: 58px;
+    height: 58px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 31px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    z-index: 2000;
-    transition: transform 0.25s;
-}
 
-.whatsapp-float:hover {
-    transform: scale(1.08);
+    border-radius: 50%;
+
+    background: #19b957;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+
+    z-index: 2000;
 }
 
 /* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+    }
+
+    .hero-image {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fleet {
+        grid-template-columns: 1fr;
+    }
+
+    .industries {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
 
     .nav-links {
         display: none;
     }
 
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-grid,
-    .tanker-box,
-    .about-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .industry-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero {
-        padding: 65px 0;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    section {
-        padding: 60px 0;
-    }
-
-    .navbar {
-        min-height: 75px;
-    }
-
-    .logo {
-        height: 58px;
-    }
-
-    .nav-buttons .btn {
-        padding: 10px 13px;
-        font-size: 13px;
-    }
-
     .hero h1 {
-        font-size: 43px;
+        font-size: 40px;
     }
 
     .hero-text {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    .hero-card {
-        min-height: 300px;
-        padding: 20px;
+    .services {
+        grid-template-columns: 1fr;
     }
 
-    .hero-card-inner {
-        padding: 25px;
+    .fleet-images {
+        grid-template-columns: 1fr;
     }
 
-    .service-grid,
-    .industry-grid,
-    .compliance-grid,
+    .fleet-image {
+        height: 220px;
+    }
+
+    .industries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .compliance {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .section-header h2,
-    .about h2,
-    .tanker-content h2 {
-        font-size: 32px;
-    }
-
-    .about-points {
-        grid-template-columns: 1fr;
-    }
-
-    .cta h2 {
-        font-size: 32px;
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .whatsapp-float {
-        width: 58px;
-        height: 58px;
-        right: 16px;
-        bottom: 16px;
+        right: 15px;
+        bottom: 15px;
     }
 }
 
@@ -753,31 +708,35 @@ footer a:hover {
 ========================= -->
 
 <header>
-    <div class="container navbar">
 
-        <a href="#home">
-            <img src="alr-logo.png" alt="ALR Groups Logo" class="logo">
-        </a>
+<nav class="navbar">
 
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#industries">Industries</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<a href="#home" class="logo">
+    <img src="alr-logo.png" alt="ALR Groups Logo">
+</a>
 
-        <div class="nav-buttons">
-            <a href="tel:9677755057" class="btn btn-outline">
-                📞 Call
-            </a>
+<div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#industries">Industries We Serve</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+</div>
 
-            <a href="#contact" class="btn btn-primary">
-                Get a Quote
-            </a>
-        </div>
+<div class="nav-actions">
 
-    </div>
+<a class="call-btn" href="tel:+919677755057">
+    ☎ 9677755057
+</a>
+
+<a class="whatsapp-btn" href="https://wa.me/918328249528" target="_blank">
+    WhatsApp
+</a>
+
+</div>
+
+</nav>
+
 </header>
 
 
@@ -785,68 +744,50 @@ footer a:hover {
      HERO
 ========================= -->
 
-<main>
-
 <section class="hero" id="home">
 
-    <div class="container hero-grid">
+<div class="hero-container">
 
-        <div>
+<div class="hero-content">
 
-            <div class="badge">
-                RO • DM • DRINKING WATER • BULK SUPPLY
-            </div>
+<div class="hero-tag">
+PURE WATER. RELIABLE SUPPLY.
+</div>
 
-            <h1>
-                Reliable Water
-                <br>
-                for <span>Every</span>
-                <br>
-                Requirement.
-            </h1>
+<h1>
+Reliable Water
+<br>
+for <span>Every Need.</span>
+</h1>
 
-            <p class="hero-text">
-                ALR Groups provides dependable water supply solutions
-                for industries, offices, commercial facilities,
-                businesses and local customers.
-            </p>
+<p class="hero-text">
+ALR Groups provides RO water, DM water, 20L drinking water cans
+and bulk water tanker supply for industries, offices, commercial
+establishments and local businesses.
+</p>
 
-            <div class="hero-buttons">
+<div class="hero-buttons">
 
-                <a href="#contact" class="btn btn-primary">
-                    Request a Quote
-                </a>
+<a class="primary-btn" href="#services">
+    Our Services
+</a>
 
-                <a href="#services" class="btn btn-outline">
-                    View Our Services
-                </a>
+<a class="secondary-btn" href="#contact">
+    Get a Quote
+</a>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
+<div class="hero-image">
 
-        <div class="hero-card">
+<!-- Use your best ALR tanker photo here -->
+<img src="tanker-1.jpg" alt="ALR Groups Water Tanker">
 
-            <div class="hero-card-inner">
+</div>
 
-                <div class="big-icon">💧</div>
-
-                <h2>
-                    Pure Water. Reliable Supply.
-                </h2>
-
-                <p>
-                    RO water, DM water, 20L drinking water cans
-                    and bulk tanker water supplied to suit
-                    your business requirements.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -855,108 +796,93 @@ footer a:hover {
      SERVICES
 ========================= -->
 
-<section class="services" id="services">
+<section class="section" id="services">
 
-    <div class="container">
+<h2 class="section-title">
+Our Water Supply Services
+</h2>
 
-        <div class="section-header">
+<div class="services">
 
-            <h2>Our Water Supply Services</h2>
+<!-- RO -->
 
-            <p>
-                Reliable water solutions for residential,
-                commercial and industrial requirements.
-            </p>
+<div class="service-card">
 
-        </div>
+<div class="service-image">
+    <div style="font-size:55px;">💧</div>
+</div>
 
+<h3>RO Water</h3>
 
-        <div class="service-grid">
+<p>
+Reliable RO water supply for commercial,
+industrial and general requirements.
+</p>
 
-            <!-- RO WATER -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    💧
-                </div>
-
-                <h3>
-                    RO Water
-                </h3>
-
-                <p>
-                    Reliable RO water supply for commercial,
-                    industrial and general requirements.
-                </p>
-
-            </div>
+</div>
 
 
-            <!-- DM WATER -->
+<!-- DM -->
 
-            <div class="service-card">
+<div class="service-card">
 
-                <div class="service-icon">
-                    🧪
-                </div>
+<div class="service-image">
+    <div style="font-size:55px;">🧪</div>
+</div>
 
-                <h3>
-                    DM Water
-                </h3>
+<h3>DM Water</h3>
 
-                <p>
-                    Demineralized water supply suitable for
-                    industrial and process requirements.
-                </p>
+<p>
+Demineralized water supply suitable for
+industrial and process requirements.
+</p>
 
-            </div>
+</div>
 
 
-            <!-- 20L DRINKING WATER -->
+<!-- 20L CAN -->
 
-            <div class="service-card">
+<div class="service-card">
 
-                <div class="service-icon">
-                    🪣
-                </div>
+<div class="service-image">
 
-                <h3>
-                    20L Drinking Water Cans
-                </h3>
+<img
+src="20l-can.jpg"
+alt="20 Litre Drinking Water Can"
+>
 
-                <p>
-                    Hygienic and reliable 20L drinking water
-                    cans supplied for offices, shops,
-                    homes and commercial establishments.
-                </p>
+</div>
 
-            </div>
+<h3>20L Drinking Water Cans</h3>
+
+<p>
+Hygienic and reliable 20L drinking water
+cans supplied for offices, shops, homes
+and commercial establishments.
+</p>
+
+</div>
 
 
-            <!-- BULK WATER -->
+<!-- BULK -->
 
-            <div class="service-card">
+<div class="service-card">
 
-                <div class="service-icon">
-                    🚛
-                </div>
+<div class="service-image">
+    <div style="font-size:55px;">🚛</div>
+</div>
 
-                <h3>
-                    Bulk Water Supply
-                </h3>
+<h3>Bulk Water Supply</h3>
 
-                <p>
-                    Bulk water tanker supply for construction,
-                    industrial, commercial and other large-volume
-                    requirements.
-                </p>
+<p>
+Bulk water tanker supply for construction,
+industrial, commercial and other
+large-volume requirements.
+</p>
 
-            </div>
+</div>
 
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -965,63 +891,56 @@ footer a:hover {
      TANKER FLEET
 ========================= -->
 
-<section class="tanker-section">
+<section class="section fleet-section">
 
-    <div class="container tanker-box">
+<div class="fleet">
 
-        <div class="tanker-image">
+<div class="fleet-info">
 
-            <div class="tanker-symbol">
-                🚛
-            </div>
+<h2>
+Our Water Tanker Fleet
+</h2>
 
-        </div>
+<p>
+ALR Groups has 3 water tankers available
+for dependable bulk water supply and delivery.
+</p>
+
+<ul class="fleet-list">
+
+<li>3 Tankers Available</li>
+<li>Bulk Water Delivery</li>
+<li>Commercial & Industrial Supply</li>
+<li>Reliable Delivery Support</li>
+
+</ul>
+
+</div>
 
 
-        <div class="tanker-content">
+<div class="fleet-images">
 
-            <h2>
-                Our Water Tanker Fleet
-            </h2>
+<div class="fleet-image">
+    <img
+    src="tanker-1.jpg"
+    alt="ALR Groups Water Tanker 1">
+</div>
 
-            <p>
-                ALR Groups has <strong>3 water tankers available</strong>
-                for dependable bulk water supply and delivery.
-            </p>
+<div class="fleet-image">
+    <img
+    src="tanker-2.jpg"
+    alt="ALR Groups Water Tanker 2">
+</div>
 
-            <p>
-                Our tanker service can support customers requiring
-                larger quantities of water for commercial,
-                industrial and other bulk requirements.
-            </p>
+<div class="fleet-image">
+    <img
+    src="tanker-3.jpg"
+    alt="ALR Groups Water Tanker 3">
+</div>
 
-            <ul class="tanker-list">
+</div>
 
-                <li>
-                    3 Tankers Available
-                </li>
-
-                <li>
-                    Bulk Water Delivery
-                </li>
-
-                <li>
-                    Commercial & Industrial Supply
-                </li>
-
-                <li>
-                    Reliable Delivery Support
-                </li>
-
-            </ul>
-
-            <a href="#contact" class="btn btn-primary">
-                Enquire About Tanker Supply
-            </a>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -1030,82 +949,45 @@ footer a:hover {
      INDUSTRIES
 ========================= -->
 
-<section class="industries" id="industries">
+<section class="section" id="industries">
 
-    <div class="container">
+<h2 class="section-title">
+Industries We Serve
+</h2>
 
-        <div class="section-header">
+<div class="industries">
 
-            <h2>
-                Industries We Serve
-            </h2>
+<div class="industry">
+<div class="industry-icon">🏭</div>
+<h4>Industries</h4>
+</div>
 
-            <p>
-                Water supply solutions designed for different
-                commercial and industrial requirements.
-            </p>
+<div class="industry">
+<div class="industry-icon">🏢</div>
+<h4>Offices</h4>
+</div>
 
-        </div>
+<div class="industry">
+<div class="industry-icon">🏗️</div>
+<h4>Construction</h4>
+</div>
 
+<div class="industry">
+<div class="industry-icon">🏪</div>
+<h4>Commercial</h4>
+</div>
 
-        <div class="industry-grid">
+<div class="industry">
+<div class="industry-icon">🏠</div>
+<h4>Residential</h4>
+</div>
 
-            <div class="industry-card">
-                <h3>🏭 Industries</h3>
-                <p>
-                    Water supply for manufacturing and
-                    industrial facilities.
-                </p>
-            </div>
+<div class="industry">
+<div class="industry-icon">🚛</div>
+<h4>Bulk Requirements</h4>
+</div>
 
-
-            <div class="industry-card">
-                <h3>🏢 Offices</h3>
-                <p>
-                    Drinking water and general water supply
-                    for office facilities.
-                </p>
-            </div>
-
-
-            <div class="industry-card">
-                <h3>🏗️ Construction</h3>
-                <p>
-                    Bulk water supply for construction
-                    and project requirements.
-                </p>
-            </div>
-
-
-            <div class="industry-card">
-                <h3>🏪 Commercial</h3>
-                <p>
-                    Reliable water supply for shops,
-                    businesses and commercial establishments.
-                </p>
-            </div>
-
-
-            <div class="industry-card">
-                <h3>🏠 Residential</h3>
-                <p>
-                    Drinking water and water supply
-                    solutions for local customers.
-                </p>
-            </div>
-
-
-            <div class="industry-card">
-                <h3>🚚 Bulk Requirements</h3>
-                <p>
-                    Tanker-based supply for customers
-                    requiring larger quantities.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -1114,142 +996,71 @@ footer a:hover {
      ABOUT
 ========================= -->
 
-<section class="about" id="about">
+<section class="section about-section" id="about">
 
-    <div class="container about-grid">
+<div class="about">
 
-        <div>
+<h2>
+About ALR Groups
+</h2>
 
-            <h2>
-                About ALR Groups
-            </h2>
+<p>
+ALR Groups is committed to delivering clean, reliable and
+quality water supply solutions. We provide RO water, DM water,
+20L drinking water cans and bulk water tanker supply with a
+focus on timely delivery and customer satisfaction.
+</p>
 
-            <p>
-                ALR Groups provides reliable water supply
-                solutions for customers requiring RO water,
-                DM water, drinking water and bulk water supply.
-            </p>
-
-            <p>
-                We focus on dependable supply, responsive
-                customer service and meeting the water
-                requirements of businesses and customers.
-            </p>
-
-
-            <div class="about-points">
-
-                <div class="about-point">
-                    <strong>Reliable Supply</strong>
-                    Consistent water supply support.
-                </div>
-
-                <div class="about-point">
-                    <strong>Multiple Solutions</strong>
-                    RO, DM, drinking and bulk water.
-                </div>
-
-                <div class="about-point">
-                    <strong>Tanker Fleet</strong>
-                    3 tankers available for supply.
-                </div>
-
-                <div class="about-point">
-                    <strong>Customer Focus</strong>
-                    Service based on customer requirements.
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="about-visual">
-
-            <div class="water-icon">
-                💧
-            </div>
-
-            <h3>
-                Water You Can Depend On
-            </h3>
-
-            <p>
-                Reliable water supply solutions for
-                commercial and industrial requirements.
-            </p>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
 <!-- =========================
-     REGISTRATIONS
+     COMPLIANCE
 ========================= -->
 
-<section class="compliance">
+<section class="section compliance-section">
 
-    <div class="container">
+<h2 class="section-title">
+Registrations & Compliance
+</h2>
 
-        <div class="section-header">
+<div class="compliance">
 
-            <h2>
-                Registrations & Compliance
-            </h2>
+<div class="compliance-card">
 
-            <p>
-                Business registration and compliance details.
-            </p>
+<h3>GST Registration</h3>
 
-        </div>
+<div class="compliance-number">
+33ACJFA5371K1Z9
+</div>
 
-
-        <div class="compliance-grid">
-
-            <div class="compliance-card">
-
-                <h3>
-                    GST Registration
-                </h3>
-
-                <p>
-                    33ACJFA5371K1Z9
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="compliance-card">
+<div class="compliance-card">
 
-                <h3>
-                    FSSAI Registration
-                </h3>
+<h3>FSSAI Registration</h3>
 
-                <p>
-                    12425023000769
-                </p>
+<div class="compliance-number">
+12425023000769
+</div>
 
-            </div>
+</div>
 
 
-            <div class="compliance-card">
+<div class="compliance-card">
 
-                <h3>
-                    Udyam Registration
-                </h3>
+<h3>Udyam Registration</h3>
 
-                <p>
-                    TN-24-0161329
-                </p>
+<div class="compliance-number">
+TN-24-0161329
+</div>
 
-            </div>
+</div>
 
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -1258,191 +1069,40 @@ footer a:hover {
      CTA
 ========================= -->
 
-<section class="cta">
+<section class="cta" id="contact">
 
-    <div class="container">
+<div class="cta-inner">
 
-        <h2>
-            Need Reliable Water Supply?
-        </h2>
+<div>
 
-        <p>
-            Contact ALR Groups for your water supply requirement.
-        </p>
+<h2>
+Need Reliable Water Supply?
+</h2>
 
-        <a
-            href="https://wa.me/918328249528"
-            target="_blank"
-            class="btn"
-        >
-            💬 WhatsApp Us
-        </a>
+<p>
+Contact ALR Groups today for your water supply requirements.
+</p>
 
-    </div>
+</div>
 
-</section>
+<div class="cta-buttons">
 
+<a href="tel:+919677755057">
+☎ Call Us: 9677755057
+</a>
 
-<!-- =========================
-     CONTACT
-========================= -->
+<a
+href="https://wa.me/918328249528"
+target="_blank"
+>
+WhatsApp: 8328249528
+</a>
 
-<section class="contact" id="contact">
+</div>
 
-    <div class="container">
-
-        <div class="section-header">
-
-            <h2>
-                Contact ALR Groups
-            </h2>
-
-            <p>
-                Get in touch with us for water supply
-                requirements and quotations.
-            </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-
-                <h3>
-                    Get In Touch
-                </h3>
-
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        📞
-                    </div>
-
-                    <div>
-                        <strong>Phone</strong>
-
-                        <a href="tel:9677755057">
-                            9677755057
-                        </a>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        💬
-                    </div>
-
-                    <div>
-                        <strong>WhatsApp</strong>
-
-                        <a
-                            href="https://wa.me/918328249528"
-                            target="_blank"
-                        >
-                            8328249528
-                        </a>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        ✉️
-                    </div>
-
-                    <div>
-                        <strong>Email</strong>
-
-                        <a href="mailto:info@alrgroups.in">
-                            info@alrgroups.in
-                        </a>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        📧
-                    </div>
-
-                    <div>
-                        <strong>Sales Email</strong>
-
-                        <a href="mailto:sales@alrgroups.in">
-                            sales@alrgroups.in
-                        </a>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        📍
-                    </div>
-
-                    <div>
-                        <strong>Location</strong>
-
-                        <span>
-                            Madharapakkam, Tamil Nadu
-                        </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <h3>
-                    Water Supply Enquiry
-                </h3>
-
-                <p style="color:#607583; margin-bottom:25px;">
-                    Contact us directly for RO water, DM water,
-                    20L drinking water cans or bulk tanker supply.
-                </p>
-
-
-                <a
-                    href="tel:9677755057"
-                    class="btn btn-primary"
-                    style="width:100%; margin-bottom:12px;"
-                >
-                    📞 Call ALR Groups
-                </a>
-
-
-                <a
-                    href="https://wa.me/918328249528"
-                    target="_blank"
-                    class="btn btn-outline"
-                    style="width:100%;"
-                >
-                    💬 WhatsApp ALR Groups
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
-
-</main>
 
 
 <!-- =========================
@@ -1451,107 +1111,91 @@ footer a:hover {
 
 <footer>
 
-    <div class="container footer-grid">
+<div class="footer-grid">
 
-        <div>
+<div>
 
-            <img
-                src="alr-logo.png"
-                alt="ALR Groups"
-                class="footer-logo"
-            >
+<img
+src="alr-logo.png"
+alt="ALR Groups"
+class="footer-logo"
+>
 
-            <p>
-                Reliable RO, DM, drinking and bulk water
-                supply solutions.
-            </p>
+<p>
+Reliable RO, DM, drinking and bulk water
+supply solutions.
+</p>
 
-        </div>
-
-
-        <div>
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <ul class="footer-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-
-                <li>
-                    <a href="#industries">Industries</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </div>
+</div>
 
 
-        <div>
+<div>
 
-            <h3>
-                Contact
-            </h3>
+<h3>Quick Links</h3>
 
-            <p>📞 9677755057</p>
+<ul>
 
-            <p>💬 8328249528</p>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#industries">Industries</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
 
-            <p>✉️ info@alrgroups.in</p>
+</ul>
 
-            <p>📧 sales@alrgroups.in</p>
-
-            <p>📍 Madharapakkam, Tamil Nadu</p>
-
-        </div>
+</div>
 
 
-        <div class="footer-compliance">
+<div>
 
-            <h3>
-                Registrations & Compliance
-            </h3>
+<h3>Contact</h3>
 
-            <p>
-                <strong>GST Registration</strong><br>
-                33ACJFA5371K1Z9
-            </p>
+<ul>
 
-            <p>
-                <strong>FSSAI Registration</strong><br>
-                12425023000769
-            </p>
+<li>☎ 9677755057</li>
+<li>💬 8328249528</li>
+<li>✉ info@alrgroups.in</li>
+<li>✉ sales@alrgroups.in</li>
+<li>📍 Madharapakkam, Tamil Nadu</li>
 
-            <p>
-                <strong>Udyam Registration</strong><br>
-                TN-24-0161329
-            </p>
+</ul>
 
-        </div>
-
-    </div>
+</div>
 
 
-    <div class="container footer-bottom">
+<div>
 
-        © 2026 ALR Groups. All Rights Reserved.
+<h3>Registrations & Compliance</h3>
 
-    </div>
+<ul>
+
+<li>
+<strong>GSTIN:</strong><br>
+33ACJFA5371K1Z9
+</li>
+
+<li>
+<strong>FSSAI:</strong><br>
+12425023000769
+</li>
+
+<li>
+<strong>Udyam Registration:</strong><br>
+TN-24-0161329
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 ALR Groups. All Rights Reserved.
+
+</div>
 
 </footer>
 
@@ -1561,13 +1205,14 @@ footer a:hover {
 ========================= -->
 
 <a
-    href="https://wa.me/918328249528"
-    target="_blank"
-    class="whatsapp-float"
-    aria-label="WhatsApp ALR Groups"
+class="whatsapp-float"
+href="https://wa.me/918328249528"
+target="_blank"
+aria-label="Chat with ALR Groups on WhatsApp"
 >
-    💬
+☘
 </a>
+
 
 </body>
 </html>
