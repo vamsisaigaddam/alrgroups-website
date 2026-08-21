@@ -12,648 +12,648 @@
 
 <style>
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:#123047;
-    background:#ffffff;
-    line-height:1.6;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123047;
+    background: #ffffff;
+    line-height: 1.6;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* ================= HEADER ================= */
 
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#ffffff;
-    border-bottom:1px solid #e4eef2;
-    box-shadow:0 2px 12px rgba(0,0,0,.05);
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 1px solid #e4eef2;
+    box-shadow: 0 2px 12px rgba(0,0,0,.05);
 }
 
-.navbar{
-    min-height:105px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:25px;
+.navbar {
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
 }
 
-.logo img{
-    height:92px;
-    width:auto;
-    max-width:230px;
-    object-fit:contain;
-    display:block;
+.logo img {
+    height: 92px;
+    width: auto;
+    max-width: 230px;
+    object-fit: contain;
+    display: block;
 }
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:28px;
-    list-style:none;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
 }
 
-.nav-links a{
-    font-size:16px;
-    font-weight:700;
-    color:#23485f;
+.nav-links a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #23485f;
 }
 
-.nav-links a:hover{
-    color:#0787ae;
+.nav-links a:hover {
+    color: #0787ae;
 }
 
-.header-actions{
-    display:flex;
-    align-items:center;
-    gap:10px;
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    padding:13px 22px;
-    border-radius:9px;
-    font-weight:700;
-    border:2px solid transparent;
-    cursor:pointer;
-    transition:.2s;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: .2s;
 }
 
-.btn-primary{
-    background:#0787ae;
-    color:#ffffff;
+.btn-primary {
+    background: #0787ae;
+    color: #ffffff;
 }
 
-.btn-primary:hover{
-    background:#056d8e;
+.btn-primary:hover {
+    background: #056d8e;
 }
 
-.btn-outline{
-    background:#ffffff;
-    color:#0787ae;
-    border-color:#0787ae;
+.btn-outline {
+    background: #ffffff;
+    color: #0787ae;
+    border-color: #0787ae;
 }
 
-.btn-outline:hover{
-    background:#eefaff;
+.btn-outline:hover {
+    background: #eefaff;
 }
 
 /* ================= HERO ================= */
 
-.hero{
-    background:linear-gradient(135deg,#eefbff,#ffffff 60%,#effcf8);
-    padding:80px 0;
+.hero {
+    background: linear-gradient(135deg,#eefbff,#ffffff 60%,#effcf8);
+    padding: 80px 0;
 }
 
-.hero-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
 }
 
-.badge{
-    display:inline-block;
-    background:#dff5fb;
-    color:#087da4;
-    padding:9px 17px;
-    border-radius:30px;
-    font-weight:700;
-    margin-bottom:20px;
+.badge {
+    display: inline-block;
+    background: #dff5fb;
+    color: #087da4;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.hero h1{
-    font-size:clamp(44px,6vw,70px);
-    line-height:1.05;
-    margin-bottom:22px;
-    color:#103b55;
+.hero h1 {
+    font-size: clamp(44px,6vw,70px);
+    line-height: 1.05;
+    margin-bottom: 22px;
+    color: #103b55;
 }
 
-.hero h1 span{
-    color:#0787ae;
+.hero h1 span {
+    color: #0787ae;
 }
 
-.hero-text{
-    font-size:20px;
-    color:#58717f;
-    margin-bottom:30px;
-    max-width:650px;
+.hero-text {
+    font-size: 20px;
+    color: #58717f;
+    margin-bottom: 30px;
+    max-width: 650px;
 }
 
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.hero-card{
-    min-height:410px;
-    border-radius:30px;
-    background:linear-gradient(145deg,#0787ae,#20b59a);
-    display:flex;
-    align-items:flex-end;
-    padding:35px;
-    box-shadow:0 20px 50px rgba(8,120,150,.20);
+.hero-card {
+    min-height: 410px;
+    border-radius: 30px;
+    background: linear-gradient(145deg,#0787ae,#20b59a);
+    display: flex;
+    align-items: flex-end;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(8,120,150,.20);
 }
 
-.hero-card-inner{
-    width:100%;
-    padding:30px;
-    border:1px solid rgba(255,255,255,.5);
-    border-radius:20px;
-    background:rgba(255,255,255,.16);
-    color:#ffffff;
+.hero-card-inner {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    background: rgba(255,255,255,.16);
+    color: #ffffff;
 }
 
-.hero-card h2{
-    font-size:31px;
-    margin-bottom:10px;
+.hero-card h2 {
+    font-size: 31px;
+    margin-bottom: 10px;
 }
 
-.hero-card p{
-    font-size:18px;
+.hero-card p {
+    font-size: 18px;
 }
 
 /* ================= SECTIONS ================= */
 
-section{
-    padding:80px 0;
+section {
+    padding: 80px 0;
 }
 
-.section-head{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 45px;
+.section-head {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
 }
 
-.section-head h2{
-    font-size:40px;
-    color:#103b55;
-    margin-bottom:12px;
+.section-head h2 {
+    font-size: 40px;
+    color: #103b55;
+    margin-bottom: 12px;
 }
 
-.section-head p{
-    color:#607785;
-    font-size:18px;
+.section-head p {
+    color: #607785;
+    font-size: 18px;
 }
 
 /* ================= SERVICES ================= */
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:22px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 22px;
 }
 
-.card{
-    background:#ffffff;
-    border:1px solid #e1edf1;
-    border-radius:18px;
-    padding:28px;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-    transition:.2s;
+.card {
+    background: #ffffff;
+    border: 1px solid #e1edf1;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+    transition: .2s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 14px 35px rgba(0,0,0,.10);
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(0,0,0,.10);
 }
 
-.icon{
-    font-size:38px;
-    margin-bottom:15px;
+.icon {
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
-.card h3{
-    color:#123f58;
-    margin-bottom:8px;
-    font-size:21px;
+.card h3 {
+    color: #123f58;
+    margin-bottom: 8px;
+    font-size: 21px;
 }
 
-.card p{
-    color:#607785;
+.card p {
+    color: #607785;
 }
 
 /* ================= INDUSTRIES ================= */
 
-.industries{
-    background:#f3fbfd;
+.industries {
+    background: #f3fbfd;
 }
 
-.industry-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
 }
 
-.industry{
-    background:#ffffff;
-    padding:23px;
-    border-radius:14px;
-    border-left:5px solid #0787ae;
-    box-shadow:0 5px 18px rgba(0,0,0,.05);
+.industry {
+    background: #ffffff;
+    padding: 23px;
+    border-radius: 14px;
+    border-left: 5px solid #0787ae;
+    box-shadow: 0 5px 18px rgba(0,0,0,.05);
 }
 
-.industry h3{
-    color:#123f58;
-    margin-bottom:5px;
+.industry h3 {
+    color: #123f58;
+    margin-bottom: 5px;
 }
 
-.industry p{
-    color:#607785;
+.industry p {
+    color: #607785;
 }
 
 /* ================= ABOUT ================= */
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
 }
 
-.about-text h2{
-    font-size:40px;
-    color:#103b55;
-    margin-bottom:18px;
+.about-text h2 {
+    font-size: 40px;
+    color: #103b55;
+    margin-bottom: 18px;
 }
 
-.about-text p{
-    color:#607785;
-    font-size:18px;
-    margin-bottom:15px;
+.about-text p {
+    color: #607785;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-.about-logo{
-    width:190px;
-    height:auto;
-    margin-bottom:20px;
+.about-logo {
+    width: 190px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.about-box{
-    background:linear-gradient(145deg,#087ea5,#19b79a);
-    color:#ffffff;
-    border-radius:25px;
-    padding:45px;
+.about-box {
+    background: linear-gradient(145deg,#087ea5,#19b79a);
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 45px;
 }
 
-.about-box h2{
-    font-size:38px;
-    margin-bottom:15px;
+.about-box h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
-.about-points{
-    list-style:none;
-    margin:20px 0;
+.about-points {
+    list-style: none;
+    margin: 20px 0;
 }
 
-.about-points li{
-    margin-bottom:10px;
-    font-weight:700;
-    color:#31566a;
+.about-points li {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #31566a;
 }
 
-.about-points li::before{
-    content:"✓";
-    color:#10a875;
-    font-weight:900;
-    margin-right:10px;
+.about-points li::before {
+    content: "✓";
+    color: #10a875;
+    font-weight: 900;
+    margin-right: 10px;
 }
 
 /* ================= CONTACT ================= */
 
-.contact{
-    background:#f5fbfd;
+.contact {
+    background: #f5fbfd;
 }
 
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
 }
 
-.contact-info{
-    background:#103b55;
-    color:#ffffff;
-    border-radius:22px;
-    padding:38px;
+.contact-info {
+    background: #103b55;
+    color: #ffffff;
+    border-radius: 22px;
+    padding: 38px;
 }
 
-.contact-info h2{
-    font-size:32px;
-    margin-bottom:25px;
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
-.contact-item{
-    display:flex;
-    gap:15px;
-    margin:20px 0;
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
 }
 
-.contact-icon{
-    font-size:25px;
-    min-width:35px;
+.contact-icon {
+    font-size: 25px;
+    min-width: 35px;
 }
 
-.contact-item strong{
-    display:block;
-    margin-bottom:3px;
+.contact-item strong {
+    display: block;
+    margin-bottom: 3px;
 }
 
-.contact-item a{
-    color:#b9f2ff;
+.contact-item a {
+    color: #b9f2ff;
 }
 
-.contact-item span{
-    color:#dcecf2;
+.contact-item span {
+    color: #dcecf2;
 }
 
-.form-box{
-    background:#ffffff;
-    padding:35px;
-    border-radius:22px;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+.form-box {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
 }
 
-.form-box h2{
-    margin-bottom:20px;
-    color:#103b55;
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #103b55;
 }
 
-.form-group{
-    margin-bottom:15px;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.form-group label{
-    display:block;
-    font-weight:700;
-    margin-bottom:6px;
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
 }
 
 .form-group input,
 .form-group textarea,
-.form-group select{
-    width:100%;
-    padding:13px;
-    border:1px solid #cbdde4;
-    border-radius:8px;
-    font-size:16px;
-    font-family:inherit;
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbdde4;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
 }
 
-.form-group textarea{
-    min-height:120px;
-    resize:vertical;
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
 /* ================= LOCATION ================= */
 
-.location{
-    text-align:center;
+.location {
+    text-align: center;
 }
 
-.location-box{
-    background:#f3fbfd;
-    border-radius:20px;
-    padding:35px;
-    max-width:850px;
-    margin:auto;
+.location-box {
+    background: #f3fbfd;
+    border-radius: 20px;
+    padding: 35px;
+    max-width: 850px;
+    margin: auto;
 }
 
-.location-box h2{
-    color:#103b55;
-    margin-bottom:8px;
+.location-box h2 {
+    color: #103b55;
+    margin-bottom: 8px;
 }
 
-.location-box p{
-    color:#607785;
-    font-size:18px;
+.location-box p {
+    color: #607785;
+    font-size: 18px;
 }
 
 /* ================= CTA ================= */
 
-.cta{
-    background:linear-gradient(135deg,#087fa7,#10aa9b);
-    color:#ffffff;
-    text-align:center;
-    padding:60px 0;
+.cta {
+    background: linear-gradient(135deg,#087fa7,#10aa9b);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
 }
 
-.cta h2{
-    font-size:38px;
-    margin-bottom:10px;
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
-.cta p{
-    font-size:18px;
-    margin-bottom:22px;
+.cta p {
+    font-size: 18px;
+    margin-bottom: 22px;
 }
 
 /* ================= FOOTER ================= */
 
-footer{
-    background:#092d40;
-    color:#ffffff;
-    padding:50px 0 25px;
+footer {
+    background: #092d40;
+    color: #ffffff;
+    padding: 50px 0 25px;
 }
 
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.2fr 1fr 1fr;
-    gap:40px;
-    margin-bottom:35px;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 35px;
+    margin-bottom: 35px;
 }
 
-.footer-logo img{
-    height:85px;
-    width:auto;
-    max-width:210px;
-    background:#ffffff;
-    padding:5px;
-    border-radius:8px;
+.footer-logo img {
+    height: 85px;
+    width: auto;
+    max-width: 210px;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
 }
 
-.footer h3{
-    margin-bottom:15px;
+.footer h3 {
+    margin-bottom: 15px;
 }
 
-.footer p{
-    color:#c7dce4;
-    margin-bottom:8px;
+.footer p {
+    color: #c7dce4;
+    margin-bottom: 8px;
 }
 
-.footer a:hover{
-    color:#5ed4d0;
+.footer a:hover {
+    color: #5ed4d0;
 }
 
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.15);
-    padding-top:20px;
-    text-align:center;
-    color:#a8bec8;
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.15);
+    padding-top: 20px;
+    text-align: center;
+    color: #a8bec8;
 }
 
 /* ================= WHATSAPP ================= */
 
-.whatsapp-float{
-    position:fixed;
-    right:22px;
-    bottom:22px;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:#25d366;
-    color:#ffffff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
-    z-index:2000;
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25d366;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    z-index: 2000;
 }
 
-.whatsapp-float:hover{
-    transform:scale(1.08);
+.whatsapp-float:hover {
+    transform: scale(1.08);
 }
 
 /* ================= MOBILE ================= */
 
-@media(max-width:950px){
+@media(max-width:950px) {
 
-    .navbar{
-        min-height:90px;
+    .navbar {
+        min-height: 90px;
     }
 
-    .logo img{
-        height:78px;
-        max-width:190px;
+    .logo img {
+        height: 78px;
+        max-width: 190px;
     }
 
-    .nav-links{
-        display:none;
+    .nav-links {
+        display: none;
     }
 
-    .header-actions .btn-outline{
-        display:none;
+    .header-actions .btn-outline {
+        display: none;
     }
 
     .hero-grid,
     .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 
-    .cards{
-        grid-template-columns:repeat(2,1fr);
+    .cards {
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .industry-grid{
-        grid-template-columns:repeat(2,1fr);
+    .industry-grid {
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-    .container{
-        width:90%;
+    .container {
+        width: 90%;
     }
 
-    .navbar{
-        min-height:82px;
+    .navbar {
+        min-height: 82px;
     }
 
-    .logo img{
-        height:70px;
-        max-width:170px;
+    .logo img {
+        height: 70px;
+        max-width: 170px;
     }
 
-    .header-actions .btn{
-        padding:10px 14px;
-        font-size:14px;
+    .header-actions .btn {
+        padding: 10px 14px;
+        font-size: 14px;
     }
 
-    .hero{
-        padding:55px 0;
+    .hero {
+        padding: 55px 0;
     }
 
-    .hero h1{
-        font-size:42px;
+    .hero h1 {
+        font-size: 42px;
     }
 
-    .hero-text{
-        font-size:17px;
+    .hero-text {
+        font-size: 17px;
     }
 
-    .hero-buttons{
-        flex-direction:column;
+    .hero-buttons {
+        flex-direction: column;
     }
 
-    .hero-buttons .btn{
-        width:100%;
+    .hero-buttons .btn {
+        width: 100%;
     }
 
-    .hero-card{
-        min-height:290px;
-        padding:22px;
+    .hero-card {
+        min-height: 290px;
+        padding: 22px;
     }
 
-    .hero-card-inner{
-        padding:22px;
+    .hero-card-inner {
+        padding: 22px;
     }
 
     .cards,
     .industry-grid,
-    .footer-grid{
-        grid-template-columns:1fr;
+    .footer-grid {
+        grid-template-columns: 1fr;
     }
 
-    section{
-        padding:60px 0;
+    section {
+        padding: 60px 0;
     }
 
     .section-head h2,
-    .about-text h2{
-        font-size:32px;
+    .about-text h2 {
+        font-size: 32px;
     }
 
     .contact-info,
-    .form-box{
-        padding:25px;
+    .form-box {
+        padding: 25px;
     }
 
-    .whatsapp-float{
-        width:57px;
-        height:57px;
-        right:16px;
-        bottom:16px;
+    .whatsapp-float {
+        width: 57px;
+        height: 57px;
+        right: 16px;
+        bottom: 16px;
     }
 }
 
@@ -674,25 +674,11 @@ footer{
 
     <ul class="nav-links">
 
-        <li>
-            <a href="#home">Home</a>
-        </li>
-
-        <li>
-            <a href="#services">Services</a>
-        </li>
-
-        <li>
-            <a href="#industries">Industries</a>
-        </li>
-
-        <li>
-            <a href="#about">About</a>
-        </li>
-
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
 
     </ul>
 
@@ -735,24 +721,18 @@ footer{
         </h1>
 
         <p class="hero-text">
-
             ALR Groups provides dependable water supply
             solutions for industries, offices, commercial
             facilities and local businesses.
-
         </p>
 
         <div class="hero-buttons">
 
-            <a
-                class="btn btn-primary"
-                href="#contact">
+            <a class="btn btn-primary" href="#contact">
                 Request a Quote
             </a>
 
-            <a
-                class="btn btn-outline"
-                href="#services">
+            <a class="btn btn-outline" href="#services">
                 View Our Services
             </a>
 
@@ -809,9 +789,7 @@ footer{
 
             <div class="icon">💧</div>
 
-            <h3>
-                RO Water
-            </h3>
+            <h3>RO Water</h3>
 
             <p>
                 Reverse Osmosis water suitable for
@@ -825,9 +803,7 @@ footer{
 
             <div class="icon">🧪</div>
 
-            <h3>
-                DM Water
-            </h3>
+            <h3>DM Water</h3>
 
             <p>
                 Demineralized water supply for processes
@@ -841,9 +817,7 @@ footer{
 
             <div class="icon">🥤</div>
 
-            <h3>
-                Drinking Water
-            </h3>
+            <h3>Drinking Water</h3>
 
             <p>
                 Reliable drinking water supply for offices,
@@ -857,9 +831,7 @@ footer{
 
             <div class="icon">🚚</div>
 
-            <h3>
-                Bulk Water Supply
-            </h3>
+            <h3>Bulk Water Supply</h3>
 
             <p>
                 Bulk water delivery solutions based on
@@ -877,9 +849,7 @@ footer{
 
 <!-- ================= INDUSTRIES ================= -->
 
-<section
-    class="industries"
-    id="industries">
+<section class="industries" id="industries">
 
 <div class="container">
 
@@ -900,80 +870,33 @@ footer{
     <div class="industry-grid">
 
         <div class="industry">
-
-            <h3>
-                🏭 Manufacturing
-            </h3>
-
-            <p>
-                Industrial and process water requirements.
-            </p>
-
+            <h3>🏭 Manufacturing</h3>
+            <p>Industrial and process water requirements.</p>
         </div>
 
-
         <div class="industry">
-
-            <h3>
-                🏢 Corporate Offices
-            </h3>
-
-            <p>
-                Drinking water supply for offices and facilities.
-            </p>
-
+            <h3>🏢 Corporate Offices</h3>
+            <p>Drinking water supply for offices and facilities.</p>
         </div>
 
-
         <div class="industry">
-
-            <h3>
-                🏗️ Construction
-            </h3>
-
-            <p>
-                Bulk water requirements for construction sites.
-            </p>
-
+            <h3>🏗️ Construction</h3>
+            <p>Bulk water requirements for construction sites.</p>
         </div>
 
-
         <div class="industry">
-
-            <h3>
-                🏨 Hotels & Hospitality
-            </h3>
-
-            <p>
-                Water solutions for hospitality facilities.
-            </p>
-
+            <h3>🏨 Hotels & Hospitality</h3>
+            <p>Water solutions for hospitality facilities.</p>
         </div>
 
-
         <div class="industry">
-
-            <h3>
-                🏥 Healthcare
-            </h3>
-
-            <p>
-                Water supply solutions for healthcare facilities.
-            </p>
-
+            <h3>🏥 Healthcare</h3>
+            <p>Water supply solutions for healthcare facilities.</p>
         </div>
 
-
         <div class="industry">
-
-            <h3>
-                🏬 Commercial Facilities
-            </h3>
-
-            <p>
-                Water supply for commercial establishments.
-            </p>
-
+            <h3>🏬 Commercial Facilities</h3>
+            <p>Water supply for commercial establishments.</p>
         </div>
 
     </div>
@@ -1014,25 +937,11 @@ footer{
 
         <ul class="about-points">
 
-            <li>
-                Reliable water supply
-            </li>
-
-            <li>
-                RO and DM water solutions
-            </li>
-
-            <li>
-                Drinking water supply
-            </li>
-
-            <li>
-                Bulk water delivery
-            </li>
-
-            <li>
-                Flexible supply requirements
-            </li>
+            <li>Reliable water supply</li>
+            <li>RO and DM water solutions</li>
+            <li>Drinking water supply</li>
+            <li>Bulk water delivery</li>
+            <li>Flexible supply requirements</li>
 
         </ul>
 
@@ -1066,9 +975,7 @@ footer{
 
 <!-- ================= CONTACT ================= -->
 
-<section
-    class="contact"
-    id="contact">
+<section class="contact" id="contact">
 
 <div class="container">
 
@@ -1088,8 +995,6 @@ footer{
     <div class="contact-grid">
 
 
-        <!-- CONTACT DETAILS -->
-
         <div class="contact-info">
 
             <h2>
@@ -1099,15 +1004,11 @@ footer{
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    📞
-                </div>
+                <div class="contact-icon">📞</div>
 
                 <div>
 
-                    <strong>
-                        Phone
-                    </strong>
+                    <strong>Phone</strong>
 
                     <a href="tel:+919677755057">
                         9677755057
@@ -1120,15 +1021,11 @@ footer{
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    💬
-                </div>
+                <div class="contact-icon">💬</div>
 
                 <div>
 
-                    <strong>
-                        WhatsApp
-                    </strong>
+                    <strong>WhatsApp</strong>
 
                     <a
                         href="https://wa.me/918328249528"
@@ -1145,15 +1042,11 @@ footer{
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    📧
-                </div>
+                <div class="contact-icon">📧</div>
 
                 <div>
 
-                    <strong>
-                        Email
-                    </strong>
+                    <strong>Email</strong>
 
                     <a href="mailto:info@alrgroups.in">
                         info@alrgroups.in
@@ -1172,15 +1065,11 @@ footer{
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    📍
-                </div>
+                <div class="contact-icon">📍</div>
 
                 <div>
 
-                    <strong>
-                        Location
-                    </strong>
+                    <strong>Location</strong>
 
                     <span>
                         Madharapakam, Tamil Nadu
@@ -1192,7 +1081,6 @@ footer{
 
 
             <br>
-
 
             <a
                 class="btn btn-primary"
@@ -1215,9 +1103,7 @@ footer{
             </h2>
 
 
-            <form
-                onsubmit="sendWhatsApp(); return false;">
-
+            <form onsubmit="sendWhatsApp(); return false;">
 
                 <div class="form-group">
 
@@ -1255,33 +1141,17 @@ footer{
                         Service Required
                     </label>
 
-                    <select
-                        id="service"
-                        required>
+                    <select id="service" required>
 
                         <option value="">
                             Select a service
                         </option>
 
-                        <option>
-                            RO Water
-                        </option>
-
-                        <option>
-                            DM Water
-                        </option>
-
-                        <option>
-                            Drinking Water
-                        </option>
-
-                        <option>
-                            Bulk Water Supply
-                        </option>
-
-                        <option>
-                            Other Requirement
-                        </option>
+                        <option>RO Water</option>
+                        <option>DM Water</option>
+                        <option>Drinking Water</option>
+                        <option>Bulk Water Supply</option>
+                        <option>Other Requirement</option>
 
                     </select>
 
@@ -1310,7 +1180,6 @@ footer{
                     💬 Send Enquiry on WhatsApp
 
                 </button>
-
 
             </form>
 
@@ -1394,6 +1263,8 @@ footer{
     <div class="footer-grid">
 
 
+        <!-- COMPANY -->
+
         <div>
 
             <div class="footer-logo">
@@ -1414,6 +1285,8 @@ footer{
         </div>
 
 
+        <!-- QUICK LINKS -->
+
         <div>
 
             <h3>
@@ -1421,37 +1294,29 @@ footer{
             </h3>
 
             <p>
-                <a href="#home">
-                    Home
-                </a>
+                <a href="#home">Home</a>
             </p>
 
             <p>
-                <a href="#services">
-                    Services
-                </a>
+                <a href="#services">Services</a>
             </p>
 
             <p>
-                <a href="#industries">
-                    Industries
-                </a>
+                <a href="#industries">Industries</a>
             </p>
 
             <p>
-                <a href="#about">
-                    About
-                </a>
+                <a href="#about">About</a>
             </p>
 
             <p>
-                <a href="#contact">
-                    Contact
-                </a>
+                <a href="#contact">Contact</a>
             </p>
 
         </div>
 
+
+        <!-- CONTACT -->
 
         <div>
 
@@ -1497,6 +1362,32 @@ footer{
 
         </div>
 
+
+        <!-- REGISTRATIONS -->
+
+        <div>
+
+            <h3>
+                Registrations & Compliance
+            </h3>
+
+            <p>
+                <strong>GSTIN:</strong><br>
+                33ACJFA5371K1Z9
+            </p>
+
+            <p>
+                <strong>FSSAI License No.:</strong><br>
+                12425023000769
+            </p>
+
+            <p>
+                <strong>Udyam Registration:</strong><br>
+                TN-24-0161329
+            </p>
+
+        </div>
+
     </div>
 
 
@@ -1528,7 +1419,7 @@ footer{
 
 <script>
 
-function sendWhatsApp(){
+function sendWhatsApp() {
 
     const name =
         document.getElementById("name").value;
